@@ -2,6 +2,7 @@ var generators = require('yeoman-generator');
 
 module.exports = generators.Base.extend({
   askFor: function() {
+    var self = this;
     var done = this.async();
     var prompts = [
       {
@@ -19,14 +20,12 @@ module.exports = generators.Base.extend({
         message: 'What is your github username?'
       }
     ];
-    return this.prompt(prompts, (function(_this) {
-      return function(props) {
-        _this.appname = props.appname;
-        _this.author = props.author;
-        _this.githubUrl = "https://github.com/" + props.githubUser;
-        return done();
-      };
-    })(this));
+    this.prompt(prompts, function(props) {
+      self.appname = props.appname;
+      self.author = props.author;
+      self.githubUrl = "https://github.com/" + props.githubUser;
+      return done();
+    })
   },
   projectFiles: function() {
     this.template('_webpack.config.dev.js', 'webpack.config.dev.js');
