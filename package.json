@@ -1,0 +1,29 @@
+{
+  "name": "generator-micro-site",
+  "version": "1.0.0",
+  "description": "Generates a basic micro site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified, but you good bruh\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/octoblu/generator-micro-site.git"
+  },
+  "author": "Octoblu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/octoblu/generator-micro-site/issues"
+  },
+  "homepage": "https://github.com/octoblu/generator-micro-site#readme",
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "files": [
+    "app"
+  ],
+  "dependencies": {
+    "create-file": "^1.0.1",
+    "yeoman-generator": "^0.22.5"
+  }
+}
