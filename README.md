@@ -1,2 +1,3 @@
-# generator-micro-site
-Generates a basic micro site
+# generator-zooid-app
+
+Generates a basic zooid app
