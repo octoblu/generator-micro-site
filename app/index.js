@@ -5,14 +5,25 @@ module.exports = generators.Base.extend({
     var done = this.async();
     var prompts = [
       {
-        name: 'appName',
+        name: 'appname',
         message: 'What would you like your app to be called?',
         'default': 'sample-app'
+      },
+      {
+        name: 'author',
+        message: 'Who is the author?',
+        'default': 'Bob Jones'
+      },
+      {
+        name: 'githubUser',
+        message: 'What is your github username?'
       }
     ];
     return this.prompt(prompts, (function(_this) {
       return function(props) {
-        _this.appname = props.appName;
+        _this.appname = props.appname;
+        _this.author = props.author;
+        _this.githubUrl = "https://github.com/" + props.githubUser;
         return done();
       };
     })(this));
@@ -30,6 +41,7 @@ module.exports = generators.Base.extend({
     this.template('src/containers/_app.js', 'src/containers/app.js');
     this.template('src/containers/_home.js', 'src/containers/home.js');
     this.template('src/_index.js', 'src/index.js');
+    this.template('_travis.yml', '.travis.yml');
     return this.template('_gitignore', '.gitignore');
   }
 });

@@ -17,7 +17,16 @@
     "babel",
     "webpack"
   ],
-  "author": "",
+  "homepage": "<%= githubUrl %>/<%= appname %>",
+  "bugs": "<%= githubUrl %>/<%= appname %>/issues",
+  "author": {
+    "name": "<%= author %>",
+    "url": "<%= githubUrl %>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "<%= githubUrl %>/<%= appname %>.git"
+  },
   "license": "MIT",
   "dependencies": {
     "react": "^0.14.7",
