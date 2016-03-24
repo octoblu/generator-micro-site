@@ -1,6 +1,6 @@
 {
   "name": "generator-zooid-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generates a basic zooid app",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/octoblu/generator-micro-site.git"
+    "url": "git+https://github.com/octoblu/generator-zooid-app.git"
   },
   "author": "Octoblu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/octoblu/generator-micro-site/issues"
+    "url": "https://github.com/octoblu/generator-zooid-app/issues"
   },
-  "homepage": "https://github.com/octoblu/generator-micro-site#readme",
+  "homepage": "https://github.com/octoblu/generator-zooid-app#readme",
   "keywords": [
     "yeoman-generator"
   ],
