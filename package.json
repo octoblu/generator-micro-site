@@ -1,7 +1,7 @@
 {
-  "name": "generator-micro-site",
+  "name": "generator-zooid-app",
   "version": "1.0.0",
-  "description": "Generates a basic micro site",
+  "description": "Generates a basic zooid app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified, but you good bruh\""
@@ -23,7 +23,6 @@
     "app"
   ],
   "dependencies": {
-    "create-file": "^1.0.1",
     "yeoman-generator": "^0.22.5"
   }
 }
