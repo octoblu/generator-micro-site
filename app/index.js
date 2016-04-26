@@ -34,12 +34,16 @@ module.exports = generators.Base.extend({
     this.template('_index.html', 'index.html');
     this.template('_dev-server.js', 'dev-server.js');
     this.template('_babelrc', '.babelrc');
-    this.template('src/components/no-match/_index.js', 'src/components/no-match/index.js');
-    this.template('src/components/no-match/_index.css', 'src/components/no-match/index.css');
+    this.template('_eslintrc', '.eslintrc');
+    this.template('_eslintignore', '.eslintignore');
+    this.template('src/components/NotFound/_NotFound.js', 'src/components/NotFound/NotFound.js');
+    this.template('src/components/NotFound/_NotFound.spec.js', 'src/components/NotFound/NotFound.spec.js');
+    this.template('src/components/NotFound/_NotFound.css', 'src/components/NotFound/NotFound.css');
     this.template('src/config/_routes.js', 'src/config/routes.js');
     this.template('src/containers/_app.js', 'src/containers/app.js');
     this.template('src/containers/_home.js', 'src/containers/home.js');
     this.template('src/_index.js', 'src/index.js');
+    this.template('test/_setup.js', 'test/.setup.js');
     this.template('_travis.yml', '.travis.yml');
     return this.template('_gitignore', '.gitignore');
   }
