@@ -20,6 +20,7 @@ module.exports = generators.Base.extend({
         message: 'What is your github username?'
       }
     ];
+
     this.prompt(prompts, function(props) {
       self.appname = props.appname;
       self.author = props.author;
