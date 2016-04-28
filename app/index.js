@@ -40,12 +40,13 @@ module.exports = generators.Base.extend({
     this.template('src/components/NotFound/_NotFound.js', 'src/components/NotFound/NotFound.js');
     this.template('src/components/NotFound/_NotFound.spec.js', 'src/components/NotFound/NotFound.spec.js');
     this.template('src/components/NotFound/_NotFound.css', 'src/components/NotFound/NotFound.css');
+    this.template('src/components/NotFound/_index.js', 'src/components/NotFound/index.js');
     this.template('src/config/_routes.js', 'src/config/routes.js');
     this.template('src/containers/_app.js', 'src/containers/app.js');
     this.template('src/containers/_home.js', 'src/containers/home.js');
     this.template('src/_index.js', 'src/index.js');
     this.template('test/_setup.js', 'test/.setup.js');
-    this.template('test/_mocha.opts', 'test/.mocha.opts');
+    this.template('test/_mocha.opts', 'test/mocha.opts');
     this.template('_travis.yml', '.travis.yml');
     return this.template('_gitignore', '.gitignore');
   }

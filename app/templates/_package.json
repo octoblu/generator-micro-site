@@ -10,8 +10,8 @@
     "start": "node dev-server.js",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "test": "npm mocha",
-    "test:watch": "npm mocha -wR mocha-multi --reporter-options spec=-,mocha-osx-reporter=-"
+    "test": "mocha",
+    "test:watch": "mocha -wR mocha-multi --reporter-options spec=-,mocha-osx-reporter=-"
   },
   "keywords":[
     "zooid",
