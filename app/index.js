@@ -8,16 +8,17 @@ module.exports = generators.Base.extend({
       {
         name: 'appname',
         message: 'What would you like your app to be called?',
-        'default': 'sample-app'
+        'default': 'zooid-app'
       },
       {
         name: 'author',
         message: 'Who is the author?',
-        'default': 'Bob Jones'
+        'default': 'Octoblu Inc'
       },
       {
         name: 'githubUser',
-        message: 'What is your github username?'
+        message: 'What is your github username?',
+        'default': 'octoblu'
       }
     ];
 
