@@ -1,6 +1,6 @@
 {
   "name": "generator-zooid-app",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "description": "Generates a basic zooid app",
   "main": "index.js",
   "scripts": {
