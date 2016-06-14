@@ -1,6 +1,6 @@
 {
   "name": "generator-zooid-app",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Generates a basic zooid app",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,7 @@
     "yeoman-generator"
   ],
   "files": [
+    "generators",
     "app",
     "component"
   ],
