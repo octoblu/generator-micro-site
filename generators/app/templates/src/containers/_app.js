@@ -1,8 +1,8 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from 'react'
 
 const propTypes = {
   children: PropTypes.element.isRequired,
-};
+}
 
 export default class App extends React.Component {
   render() {
@@ -11,8 +11,8 @@ export default class App extends React.Component {
         <h1>Zooid App</h1>
         {this.props.children}
       </div>
-    );
+    )
   }
 }
 
-App.propTypes = propTypes;
+App.propTypes = propTypes
