@@ -1,7 +1,7 @@
 {
-  "name": "<%= appname %>",
+  "name": "<%= appNameKebab %>",
   "version": "1.0.0",
-  "description": "<%= appname %>",
+  "description": "<%= appNameKebab %>",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
@@ -20,15 +20,15 @@
     "babel",
     "webpack"
   ],
-  "homepage": "<%= githubUrl %>/<%= appname %>",
-  "bugs": "<%= githubUrl %>/<%= appname %>/issues",
+  "homepage": "<%= githubUrl %>/<%= appNameKebab %>",
+  "bugs": "<%= githubUrl %>/<%= appNameKebab %>/issues",
   "author": {
     "name": "<%= author %>",
     "url": "<%= githubUrl %>"
   },
   "repository": {
     "type": "git",
-    "url": "<%= githubUrl %>/<%= appname %>.git"
+    "url": "<%= githubUrl %>/<%= appNameKebab %>.git"
   },
   "license": "MIT",
   "dependencies": {

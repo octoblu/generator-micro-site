@@ -14,7 +14,8 @@ module.exports = generators.Base.extend({
       },{
         type: 'confirm',
         name: 'stateful',
-        message: 'Would you like this component to be stateful?'
+        message: 'Would you like this component to be stateful?',
+        default: false
       }
     ];
     return this.prompt(prompts).then(function (answers) {

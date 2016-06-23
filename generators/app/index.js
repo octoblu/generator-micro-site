@@ -8,7 +8,7 @@ module.exports = generators.Base.extend({
     var prompts = [
       {
         type: 'input',
-        name: 'appname',
+        name: 'appNameKebab',
         message: 'What would you like your app to be called?',
         default: 'Zooid App'
       },
@@ -26,21 +26,25 @@ module.exports = generators.Base.extend({
       }
     ];
     return this.prompt(prompts).then(function (answers) {
-      var camelCased = _.camelCase(answers.appname);
-      self.appNameCamel = camelCased.charAt(0).toUpperCase() + camelCased.slice(1);
-      self.appname = _.kebabCase(self.appNameCamel);
+      var camelCased = _.camelCase(answers.appNameKebab);
+      self.appName = camelCased.charAt(0).toUpperCase() + camelCased.slice(1);
+      self.appNameKebab = _.kebabCase(self.appName);
       self.author = answers.author;
+      self.githubUser = answers.githubUser;
       self.githubUrl = "https://github.com/" + answers.githubUser;
     })
   },
   writing: function() {
     var context = {
-      appname: this.appname,
+      appNameKebab: this.appNameKebab,
       author: this.author,
-      githubUrl: this.githubUrl
+      githubUrl: this.githubUrl,
+      githubUser: this.githubUser,
+      appName: this.appName
     }
     this.template('_webpack.config.dev.js', 'webpack.config.dev.js', context);
     this.template('_webpack.config.prod.js', 'webpack.config.prod.js', context);
+    this.template('_README.md', 'README.md', context);
     this.template('_package.json', 'package.json', context);
     this.template('_index.html', 'index.html', context);
     this.template('_dev-server.js', 'dev-server.js', context);
