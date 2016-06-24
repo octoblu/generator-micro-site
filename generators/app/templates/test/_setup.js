@@ -18,4 +18,4 @@ Object.keys(document.defaultView).forEach((property) => {
 
 global.navigator = { userAgent: 'node.js' }
 
-documentRef = document
+const documentRef = document
