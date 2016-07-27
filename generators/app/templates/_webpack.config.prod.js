@@ -33,20 +33,31 @@ module.exports = {
         include: path.join(__dirname, 'src')
       },
       {
-        test:   /\.css$/,
-        loader: "style-loader!css-loader!postcss-loader"
+        test: /\.css$/,
+        include: [
+          path.join(__dirname, 'src'),
+          path.join(__dirname, 'node_modules')
+        ],
+        loader: 'style-loader!css-loader?-autoprefixer!postcss-loader'
       },
       {
-        test: /\.jpg$/,
-        loader: "url-loader?limit=10000&minetype=image/jpg"
+        test: /\.json$/,
+        include: [
+          path.join(__dirname, 'src'),
+          path.join(__dirname, 'node_modules')
+        ],
+        loader: 'json'
       },
       {
-        test: /\.png$/,
-        loader: "url-loader?limit=10000&minetype=image/png"
-      },
-      {
-        test: /\.svg$/,
-        loader: "file-loader"
+        test: /\.(jpg|png|gif|eot|svg|ttf|woff|woff2)$/,
+        include: [
+          path.join(__dirname, 'src'),
+          path.join(__dirname, 'node_modules')
+        ],
+        loader: 'file',
+        query: {
+          name: '[name].[hash:8].[ext]'
+        }
       }
     ]
   },
