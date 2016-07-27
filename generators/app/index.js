@@ -51,10 +51,9 @@ module.exports = generators.Base.extend({
     this.template('_babelrc', '.babelrc', context);
     this.template('_eslintrc', '.eslintrc', context);
     this.template('_eslintignore', '.eslintignore', context);
-    this.template('src/components/NotFound/_NotFound.js', 'src/components/NotFound/NotFound.js', context);
-    this.template('src/components/NotFound/_NotFound.spec.js', 'src/components/NotFound/NotFound.spec.js', context);
-    this.template('src/components/NotFound/_NotFound.css', 'src/components/NotFound/NotFound.css', context);
     this.template('src/components/NotFound/_index.js', 'src/components/NotFound/index.js', context);
+    this.template('src/components/NotFound/_index.spec.js', 'src/components/NotFound/index.spec.js', context);
+    this.template('src/components/NotFound/_styles.css', 'src/components/NotFound/styles.css', context);
     this.template('src/config/_routes.js', 'src/config/routes.js', context);
     this.template('src/containers/_app.js', 'src/containers/app.js', context);
     this.template('src/containers/_home.js', 'src/containers/home.js', context);
