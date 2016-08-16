@@ -9,6 +9,7 @@ module.exports = generators.Base.extend({
 
   prompting: function () {
     notifier.notify();
+    console.log(notifier.update);
 
     var self = this;
     var prompts = [
