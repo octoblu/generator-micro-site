@@ -5,7 +5,7 @@ var generators = require('yeoman-generator');
 updateNotifier({
   pkg: {
     name: "generator-zooid-app",
-    version: "5.1.13"
+    version: "5.1.14"
   },
   updateCheckInterval: 0
 }).notify();
