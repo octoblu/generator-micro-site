@@ -1,7 +1,7 @@
 {
   "name": "generator-zooid-app",
-  "version": "5.1.11",
-  "description": "Generates a simple zooid application",
+  "version": "5.1.12",
+  "description": "Generate a simple zooid application",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified, but you good bruh\""
