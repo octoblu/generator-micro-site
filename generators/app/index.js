@@ -1,9 +1,15 @@
-var generators = require('yeoman-generator');
 var _ = require('lodash');
+var updateNotifier = require('update-notifier');
+var generators = require('yeoman-generator');
+
+var pkg = require('../../package.json');
+var notifier = updateNotifier({pkg});
 
 module.exports = generators.Base.extend({
 
   prompting: function () {
+    notifier.notify();
+
     var self = this;
     var prompts = [
       {
