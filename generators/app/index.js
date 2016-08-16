@@ -2,10 +2,11 @@ var _ = require('lodash');
 var updateNotifier = require('update-notifier');
 var generators = require('yeoman-generator');
 
-var pkg = require('../../package.json');
-
 updateNotifier({
-  pkg,
+  pkg: {
+    name: "generator-zooid-app",
+    version: "5.1.13"
+  },
   updateCheckInterval: 0
 }).notify();
 
