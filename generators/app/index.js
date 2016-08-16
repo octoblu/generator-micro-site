@@ -4,15 +4,14 @@ var generators = require('yeoman-generator');
 
 var pkg = require('../../package.json');
 
+updateNotifier({
+  pkg,
+  updateCheckInterval: 0
+}).notify();
+
 module.exports = generators.Base.extend({
 
   prompting: function () {
-    var notifier = updateNotifier({pkg}, function(error, update) {
-      console.log(update);
-    });
-
-    notifier.notify();
-
     var self = this;
     var prompts = [
       {
