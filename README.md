@@ -1,19 +1,4 @@
-# generator-zooid-app
-Generates a basic zooid app
+# This generator is DEPRECATED.
+We encourage using [our zooid generator instead](https://github.com/octoblu/generator-zooid).
 
-## Install
-```
-npm install --global yo
-npm install --global generator-zooid-app
-```
 
-## Usage
-#### Make a new zooid app
-```
-yo zooid-app
-```
-
-#### Make a new react component
-```
-yo zooid-app:component
-```
